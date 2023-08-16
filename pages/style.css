@@ -10,7 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .custom-btn {
@@ -30,16 +29,40 @@
     background-color: lightgrey;
 }
 
-.text1 {
-    padding: 100px 300px;
-    font-size: 26px;
-    background-size: cover;
-}
-
 .aside {
     display: flex;
     flex-direction: column;
     width: 30rem;
+}
+
+.text1 {
+    padding: 100px 300px;
+    font-size: 24px;
+    background-size: cover;
+    width: 70%;
+}
+
+.text2 {
+    display: flex;
+    flex-direction: column;
+    color: rgb(137, 137, 48);
+    align-items: center;
+    padding: 100px 300px;
+    font-size: 44px;
+    background-size: cover;
+    width: 70%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 150px;
+    padding-top: 5rem;
+    margin: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
 }
 
 .footer {
