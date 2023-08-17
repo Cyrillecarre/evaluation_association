@@ -57,7 +57,7 @@ body {
 .text3 {
  display: flex;
  justify-content: center;
- min-width: 70%;
+ width: 80%;
  padding: 100px 300px;
 }
 
@@ -81,13 +81,23 @@ body {
     width: 70%;
     
 }
+.image-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-list img {
+    max-width: 70%;
+}
 
 .logo {
     display: flex;
     flex-direction: column;
-    height: 150px;
+    height: auto;
     width: 150px;
-    padding-top: 5rem;
+    padding-top: 2rem;
     margin: 0.5rem;
     justify-content: center;
     align-items: center;
@@ -102,4 +112,82 @@ body {
     color: grey;
     justify-content: center;
     align-items: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .navbarre {
+        flex-direction: column;
+        height: auto; 
+    }
+    .logonav {
+        display: none;
+    }
+    .btnnav {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .text1, .text4, .textEvenements {
+        padding: 50px;
+        font-size: 16px;
+    }
+    .text3 {
+        padding: 20px 20px;
+        width: 100%;
+    }
+    .image-list {
+        width: 100%;
+    }
+    .aside {
+        display: none;
+    }
+    .picchampionnat {
+        max-width: 100%;
+    }
+    
+    .logo {
+        padding-top: 1rem;
+        font-size: 0.5rem;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbarre {
+        display: flex;
+        flex-direction: row;
+        height: auto; 
+    }
+    .logonav {
+        display: none;
+    }
+    .btnnav {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .text1, .text4, .textEvenements {
+        padding: 50px 80px;
+        font-size: 16px;
+    }
+    .text3 {
+        padding: 20px 20px;
+    }
+    .image-list {
+        width: 90%;
+    }
+    .aside {
+        display: none;
+    }
+    
+    .picchampionnat {
+        max-width: 100%;
+    }
+    .text3 {
+        max-width: max-content;
+    }
+    .logo {
+        padding-top: 0.5rem auto;
+        font-size: 0.5rem;
+        width: 100%;
+    }
 }
